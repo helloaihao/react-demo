@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="build/react.js"></script>
+    <script src="build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+    //组件名必须大写。。。。
+      var HelloMessage = React.createClass({
+        render: function() {
+            return <h1>hello {this.props.name}</h1>;
+        }
+      });
+
+      React.render(
+        <HelloMessage name="aihao" />,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
